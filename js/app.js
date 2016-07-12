@@ -1,6 +1,7 @@
 //AJAX Call - Flickr
 var flickrURL = "https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
 var flickrOpts = {
+    tag: "cat",
     format: "json"
 };
 
