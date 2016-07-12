@@ -1,0 +1,70 @@
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+}
+
+ul {
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+}
+
+li {
+	margin: 15px 20px;
+	padding: 0;
+	text-align: center;
+}
+
+img {
+    display: block;
+	width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5% 0;
+}
+
+input {
+    width: 15%;
+    height: 20px;
+    align-self: center;
+    border: 1px solid #bebcbc;
+    border-radius: 5px;
+}
+
+.wrapper {
+    border-top: 1px solid #333;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+
+/*TO DO*/
+/*Use at least 1 of the supplied APIs from the Project Resources section.    
+    Use more than 1 API. - Flickr &??
+    Make sure to use endpoints that do not require an API key or the use of OAuth for this project.
+    Or an API you have chosen yourself. -Flickr
+    
+Grab at more than 6 items from the API.
+    
+Display these 6+ total items in an attractive gallery
+
+See the api-thumbnail-page.png mockup file. You don't need to use photos if the API doesn't provide them. Clickable item titles work as well. Or you can use regular photos (not photos retrieved from the API) as thumbnails.
+
+Click a thumbnail to open a lightbox with displaying details of the item:
+    Name/title
+    Description
+    Image
+    Other relevant data such as date, categories, price
+
+Add a way to sort the information by categories such as date or name.
+
+Add a way to move back and forward when the lightbox is visible to switch between detail popups.
+    
+ */
