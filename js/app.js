@@ -127,7 +127,15 @@ $.getJSON(omdbURL, displayMovies);
     $nextArrow.click(function(event) {
             slideShowUpdate(1);
        	    return false; 
-    });		
+    });
+    
+    $(document).keydown(function(event) {
+        if (event.which === 37) { //keycode for left arrow key
+            slideShowUpdate(-1); //move -1
+        } else if (event.which === 39) { //keycode for right arrow key
+            slideShowUpdate(1); //move +1
+        }
+    });
 
 
 //SORT BUTTONS
