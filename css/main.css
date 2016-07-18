@@ -5,6 +5,7 @@
 
 body {
 	font-family: 'Exo', sans-serif;
+	font-style: italic;
 	color: white;
 	background: #f5f5f5 url('../img/space.jpg') repeat left top;
 }
