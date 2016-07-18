@@ -4,7 +4,13 @@
 }
 
 body {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Exo', sans-serif;
+	color: white;
+	background: #f5f5f5 url('../img/space.jpg') repeat left top;
+}
+
+h1 {
+    margin-right: auto;
 }
 
 ul {
@@ -33,6 +39,7 @@ img {
     display: block;
 	width: 100%;
 	box-shadow: 0 3px 5px #444;
+		border: 3px solid #beb9b9;
 }
 
 header,
@@ -43,20 +50,11 @@ header,
 }
 
 #flickr-header {
-    border-bottom: 1px solid #333;
-}
-
-input {
-    width: 75%;
-    height: 20px;
-    align-self: center;
-    border: 1px solid #bebcbc;
-    border-radius: 5px;
-    margin-bottom: 25px;
+    border-bottom: 1px solid #beb9b9;
 }
 
 #wrapper {
-    border-top: 1px solid #333;
+    border-top: 1px solid #beb9b9;
     width: 90%;
     margin: 0 auto;
 }
@@ -114,10 +112,49 @@ input {
 	margin: 5%;
 }
 
-.light {
-    color: lightgrey;
+
+/*Navigation Arrows*/
+
+#overlay .prev,
+#overlay .next {
+	background-color: transparent;
+	z-index: 3;
+	border: 0;
+	position: absolute;
+	top: 70%;
+	padding: 8px;
 }
 
+#overlay .prev {
+	left: 80px;
+}
+
+#overlay .next {
+	right: 80px;
+}
+
+#overlay .lnr-chevron-right,
+#overlay .lnr-chevron-left  {
+	font-family: 'Linearicons-Free';
+	font-size: 40px;
+	font-weight: bold;
+	color: #fff;
+}
+
+/*Sort buttons*/
+.sort-button {
+    padding: 5px;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #4d81be;
+    color:  white;
+    border: 0;
+    align-self: center;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    font-family: 'Exo', sans-serif;
+}
 
 /*Tablet & Desktops*/
 @media screen and (min-width: 768px) {
@@ -134,11 +171,9 @@ input {
     
     #flickr-header {
         margin: 0 auto;
-        border-bottom: 1px solid #333;
     }
     
-    input {
-        width: 25%;
+    .sort-button {
         margin-bottom: 0;
     }
     
@@ -154,6 +189,29 @@ input {
         width: 55vw;
         top: 2.5%;
         left: 22.5%;
+    }
+    
+    #overlay .prev,
+    #overlay .next {
+    	top: 20%;
+    }
+    
+    #overlay .prev {
+    	left: 50px;
+    }
+    
+    #overlay .next {
+    	right: 50px;
+    }
+    
+    .sort-button {
+        margin-left: 20px;
+        text-align: center;
+        transition: all 1s ease;
+    }
+    
+    .sort-button:hover {
+        background-color: #d72d2d;
     }
     
 }
@@ -172,7 +230,20 @@ input {
          width: 40vw;
          left: 30%;
      }
-
+     
+     #overlay .prev,
+     #overlay .next {
+     	top: 20%;
+     }
+     
+     #overlay .prev {
+     	left: 80px;
+     }
+     
+     #overlay .next {
+     	right: 80px;
+     }
+     
 }
 
 @media screen and (min-width: 1440px) {
@@ -188,26 +259,13 @@ input {
         width: 35vw;
         left: 32.5%;
     }
+    
+    #overlay .prev {
+    	left: 200px;
+    }
+    
+    #overlay .next {
+    	right: 200px;
+    }
 }
 
-/*TO DO*/
-/*X Use at least 1 of the supplied APIs from the Project Resources section. -OMDB    
-   X Use more than 1 API. - Flickr & OMDB
-    X Make sure to use endpoints that do not require an API key or the use of OAuth for this project.
-    
-X Grab at more than 6 items from the API. -Flickr 20 - OMDB 10
-    
-X Display these 6+ total items in an attractive gallery
-
-X Click a thumbnail to open a lightbox with displaying details of the item:
-    x Name/title
-    X Description
-    X Image
-    Other relevant data such as date, categories, price
-
-Add a way to sort the information by categories such as date or name.
-
-Add a way to move back and forward when the lightbox is visible to switch between detail popups.
-    -On arrow click, update overlay with data from next or prev item
-    
- */
